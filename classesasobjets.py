@@ -1,0 +1,2 @@
+class DoNothing(object):
+    pass
