@@ -6,7 +6,7 @@ class AttributeInitType(type):
         obj = type.__call__(self, *args)
 
         # set attributes on the new object
-        for name, value in kwargs:
+        for name, value in kwargs.items():
             setattr(obj, name, value)
 
         # return the new object
